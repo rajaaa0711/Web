@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9e7d9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        h2 {
+            text-align: center;
+            color: #f39c12;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .contact-info .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 200px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info .card i {
+            font-size: 36px;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+        .contact-info .card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #000;
+        }
+        .contact-info .card p {
+            font-size: 16px;
+            color: #555;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .form-container form {
+            width: 60%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-container form input,
+        .form-container form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-bottom: 2px solid #000;
+            font-size: 16px;
+        }
+        .form-container .map {
+            width: 35%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .form-container .map img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .form-container form button {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container form button:hover {
+            background-color: #d58e0e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact</h2>
+        <p>You can reach me at LinkedIn: <a href="https://www.linkedin.com/in/raja-aldino-putra-putra-80581a334" target="_blank">rajaaldino07</a>.</p>
+        <div class="contact-info">
+            <div class="card">
+                <i class="fas fa-envelope"></i>
+                <h3>My Email</h3>
+                <p>Rajaaldino07@Gmail.com</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-phone"></i>
+                <h3>My Number</h3>
+                <p>+6282122307599</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>My Address</h3>
+                <p>Jl.Jatipadang Pasar Minggu Jakarta Selatan , Jakarta, Indonesia</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

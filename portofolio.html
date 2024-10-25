@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer; /* Menunjukkan bahwa gambar dapat diklik */
+        }
+        /* Modal Styles */
+        .modal {
+            display: none; /* Tersembunyi secara default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Latar belakang transparan */
+        }
+        .modal img {
+            margin: auto;
+            display: block;
+            width: 80%; /* Ukuran gambar di modal */
+            height: auto;
+            border: none; /* Menghapus bingkai di gambar modal */
+            border-radius: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Portofolio Section -->
+    <section>
+        <h2>Portofolio</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img alt="Alice 3D Animation" src="images/Alice3.png" onclick="openModal(this)" />
+                <h3>Alice 3D Animation</h3>
+                <p>Deskripsi proyek Alice 3D Animation: Perangkat lunak ini mengajarkan pemrograman dengan cara yang menyenangkan melalui animasi 3D, cocok untuk pemula dan mendukung kreativitas.</p>
+            </div>
+            <div class="project">
+                <img alt="Photo" src="images/PHOTO.jpg" onclick="openModal(this)" />
+                <h3>Photo</h3>
+                <p>Deskripsi proyek Photo: Ini adalah proyek yang melibatkan pengambilan dan pengeditan foto untuk meningkatkan keterampilan fotografi Yang sudah saya jual di paltform online.</p>
+            </div>
+            <div class="project">
+                <img alt="SQL Basic" src="images/sql basic.jpg" onclick="openModal(this)" />
+                <h3>SQL Basic</h3>
+                <p>Deskripsi proyek SQL Basic: Ini adalah proyek yang melibatkan penggunaan SQL untuk manajemen basis data, termasuk query dan pengolahan data.</p>
+            </div>
+            <div class="project">
+                <img alt="UI" src="images/ui.jpg" onclick="openModal(this)" />
+                <h3>User Interface</h3>
+                <p>Deskripsi proyek User Interface: Proyek ini berfokus pada desain antarmuka pengguna yang menarik dan responsif menggunakan HTML, CSS, dan JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" />
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Raja Aldino Putra. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(img) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("modalImg");
+            modal.style.display = "block";
+            modalImg.src = img.src; // Mengatur sumber gambar modal
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none"; // Menyembunyikan modal
+        }
+    </script>
+</body>
+</html>
